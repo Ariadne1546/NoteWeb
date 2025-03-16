@@ -4,14 +4,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #8400ff;
 }
 
 .container {
-    background: white;
+    background: rgb(174, 0, 255);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     width: 300px;
 }
 
@@ -24,14 +24,14 @@ textarea {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #8009cf;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #8009cf;
 }
 
 ul {
@@ -48,7 +48,7 @@ li {
 }
 
 li button {
-    background: red;
+    background: rgb(255, 0, 55);
     color: white;
     border: none;
     cursor: pointer;
