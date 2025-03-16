@@ -31,7 +31,7 @@ button {
 }
 
 button:hover {
-    background-color: #8009cf;
+    background-color: rgb(255, 0, 55);
 }
 
 ul {
@@ -40,7 +40,7 @@ ul {
 }
 
 li {
-    background: #ddd;
+    background: rgb(174, 0, 255);
     padding: 10px;
     margin-top: 5px;
     display: flex;
@@ -48,7 +48,23 @@ li {
 }
 
 li button {
-    background: rgb(255, 0, 55);
+    background: #8009cf;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#notesList li {
+    display: flex;         
+    justify-content: space-between; 
+    align-items: center;  
+    padding: 8px;        
+    border-bottom: 1px solid #ccc; 
+}
+
+#notesList button {
+    margin-left: 20px; 
+    padding: 5px 10px;
+    background-color: rgb(255, 0, 55);
     color: white;
     border: none;
     cursor: pointer;
