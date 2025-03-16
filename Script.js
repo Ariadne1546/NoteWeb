@@ -16,22 +16,22 @@ function loadNotes() {
     notesList.innerHTML = "";
     let notes = JSON.parse(localStorage.getItem("notes")) || [];
 
-    notes.forEach((note, Index_NoteWeb) => {
+    notes.forEach((note, index) => {
         let li = document.createElement("li");
         li.textContent = note;
 
         let deleteButton = document.createElement("button");
         deleteButton.textContent = "X";
-        deleteButton.onclick = () => deleteNote(Index_NoteWeb);
+        deleteButton.onclick = () => deleteNote(index);
 
         li.appendChild(deleteButton);
         notesList.appendChild(li);
     });
 }
 
-function deleteNote(Index_NoteWeb) {
+function deleteNote(index) {
     let notes = JSON.parse(localStorage.getItem("notes")) || [];
-    notes.splice(Index_NoteWeb, 1);
+    notes.splice(index, 1);
     localStorage.setItem("notes", JSON.stringify(notes));
     loadNotes();
 }
