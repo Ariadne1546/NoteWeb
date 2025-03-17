@@ -35,3 +35,9 @@ function deleteNote(index) {
     localStorage.setItem("notes", JSON.stringify(notes));
     loadNotes();
 }
+ function changeTextColor() {
+     let selectedColor = document.getElementById("colorPicker").value;
+     document.querySelectorAll("#notesList li").forEach(li => {
+        li.style.color = selectedColor;
+     });
+}

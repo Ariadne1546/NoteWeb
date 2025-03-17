@@ -7,27 +7,38 @@ body {
     background-color: #8400ff;
 }
 
+h1 {
+    color:rgb(221, 159, 250);
+}
+
 .container {
     background: rgb(174, 0, 255);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     width: 300px;
+    
 }
 
 textarea {
     width: 100%;
     height: 100px;
     margin-bottom: 10px;
+    background: rgb(221, 159, 250);
 }
 
 button {
     width: 100%;
     padding: 10px;
     background-color: #8009cf;
-    color: white;
+    color: rgb(221, 159, 250);
     border: none;
     cursor: pointer;
+    font-size: 18px; 
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
 }
 
 button:hover {
@@ -35,37 +46,52 @@ button:hover {
 }
 
 ul {
+    
     list-style: none;
     padding: 0;
 }
 
-/*li {
-    background: rgb(174, 0, 255);
-    padding: 10px;
+li {
+    align-items: center;
+    background: rgb(221, 159, 250);
+    padding: 8px;
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
-}*/
+     border-bottom: 1px solid #ccc;
+    font-weight: bold; 
+}
 
 li button {
+    width:  15%;
     background: #8009cf;
     color: white;
     border: none;
     cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 20px; 
+    font-size: 18px; 
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
 }
-#notesList li {
-    display: flex;         
-    justify-content: space-between; 
-    align-items: center;  
-    padding: 8px;        
-    border-bottom: 1px solid #ccc; 
+#botonColor {
+    width: 130px;   
+    height: 55px;   
+    font-size: 18px; 
+    font-weight: bold;
+    background-color: #8009cf; 
+    color: rgb(221, 159, 250);
+    border: none;
+    border-radius: 5px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
 }
 
-#notesList button {
-    margin-left: 20px; 
-    padding: 5px 10px;
-    background-color: rgb(255, 0, 55);
-    color: white;
-    border: none;
-    cursor: pointer;
+#botonColor:hover {
+    background-color: rgb(174, 0, 255); 
+}
+input {
+    background-color:rgb(221, 159, 250) ;
 }

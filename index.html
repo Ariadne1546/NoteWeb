@@ -8,11 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Notas Rápidas</h1>
+        <h1>Tablon de notas</h1>
         <textarea id="noteInput" placeholder="Escribe tu nota aquí..."></textarea>
         <button onclick="saveNote()">Guardar Nota</button>
         <ul id="notesList"></ul>
     </div>
+    <input type="color" id="colorPicker" value="#000000">
+        <button id="botonColor" onclick="changeTextColor()">Cambiar colores</button>
     <script src="Script.js"></script>
 </body>
 </html>
